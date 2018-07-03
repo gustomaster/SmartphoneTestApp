@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta charset="utf-8" />
+	    <title>index</title>
+	</head>
+	<body>
+		<table>
+			<tr th:each="smartphone : ${smartphone}">
+			<td th:text="${smartphone}"></td>
+			</tr>
+		</table>
+		
+		<p th:each="smartphone : ${smartphone}" th:text="${smartphone.get('id')}" />
+		<p th:each="smartphone : ${smartphone}" th:text="${smartphone.get('name')}" />
+		<p th:each="smartphone : ${smartphone}" th:text="${smartphone.get('maker')}" />
+	</body>
+</html>

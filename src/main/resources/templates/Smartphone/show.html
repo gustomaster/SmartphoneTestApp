@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta charset="utf-8" />
+	    <title>show</title>
+	</head>
+	<body>
+		
+		<h1>show</h1><hr />
+		
+		<table border="1" class = "show">
+			<tr>
+				<th>id</th>
+				<th>製品名</th>
+				<th>メーカー</th>
+				<th>色</th>
+				<th>価格</th>
+				<th>発売日</th>
+			</tr>
+			<tr th:each="smartphone : ${smartphone}">
+				<td th:text="${smartphone.id}">id</td>
+				<td th:text="${smartphone.name}">id</td>
+				<td th:text="${smartphone.maker}">id</td>
+				<td th:text="${smartphone.color}">id</td>
+				<td th:text="${smartphone.price}">id</td>
+				<td th:text="${smartphone.release}">id</td>
+			</tr>
+		</table>
+		<a href="/">もどる</a>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+    	<meta charset="utf-8" />
+    	<title>new</title>
+	</head>
+	<body>
+		<h3>新規</h3>
+		<hr />
+		<br />
+		
+		<form th:action="@{/smartphone}" th:method="post" >
+			製品名：
+			<input type="text" id="name" name="name" />
+			<br />
+			
+			メーカー：
+			<input type="text" id="maker" name="maker" />
+			<br />
+			
+			色：
+			<input type="text" id="color" name="color" />
+			<br />
+			
+			価格：
+			<input type="text" id="price" name="price" />
+			<br />
+			
+			発売日：
+			<input type="text" id="release" name="release" />
+			<br />
+			
+			<input type = "reset" value = "リセット"/>
+			<input type = "submit" value = "作成"/>
+		</form>
+		<a href="/">もどる</a>
+	</body>
+</html>
